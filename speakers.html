@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="styles.css">
+    <title>GSAC-Speakers</title>
+</head>
+<body>
+ <header>
+        <span id="menu-icon">&#9776; Menu</span>
+				<span id="search-icon" onclick="toggleOverlay(); toggleSearchInput();" >&#x1F50E;&#xFE0E; </span>
+		
+		<div id="overlay" onclick="toggleOverlay()">
+		<form id="search-form" onclick="event.stopPropagation();">
+		
+		<input type="text" id="search-input" placeholder="Enter your search" onblur="toggleSearchInput()">
+		<button id="search" type="button" onclick="redirectToDynamicURL()">Search</button>
+		</form>
+		</div>
+		
+		
+		<h1>Speakers</h1>
+    </header>
+	
+	 <footer>
+        CWAS@2024
+    </footer>
+
+    <div id="app-drawer">
+		<span id="close-icon">&#10005; Close</span>
+        <span id="back-button">&#9665; Back</span>
+        <img src="D:\GSCA\Website HTML\v1.0\logo.png" alt="Drawer Image">
+        <a id="home-link" href="home.html">Home</a>
+        <a id="programme-link" href="programme.html">Programme</a>
+        <a class="active"  id="speakers-link" href="speakers.html">Speakers</a>
+        <a id="posters-link" href="posters.html">Poster presentations</a>
+        <a id="layout-link" href="layout.html">Layout plan</a>
+		<a href="https://cwas.org.in/" target="_blank" alt="CWAS">  CWAS website</a>
+    </div>
+
+
+
+  
+  <section>
+        <div class="speaker">
+        <img src="https://cwas.org.in/resources/admin_uploads/resources/GSACAromarRevi.jpg" alt="Speaker 1" class="speaker">
+		<div class="speakerp">
+        <h2>Aromar Revi</h2>
+        <p>Director | Indian Institute for Human Settlements</p>
+        </div>
+		</div>
+
+        <div class="speaker">
+        <img src="https://cwas.org.in/resources/admin_uploads/resources/GSACBarbaraEvans.jpg" alt="Speaker 1" class="speaker">
+		<div class="speakerp">
+        <h2>Barbara Evans</h2>
+        <p>Chair - Public Health Engineering - School of Civil Engineering | University of Leeds</p>
+        </div>
+		</div>
+		
+		        <div class="speaker">
+        <img src="https://cwas.org.in/resources/admin_uploads/resources/GSACBrianArbogast.jpg" alt="Speaker 1" class="speaker">
+		<div class="speakerp">
+        <h2>Brian Arbogast</h2>
+        <p>Director - Water, Sanitation & Hygiene | Bill and Melinda Gates Foundation (BMGF) </p>
+        </div>
+		</div>
+		
+		        <div class="speaker">
+        <img src="https://cwas.org.in/resources/admin_uploads/resources/GSACJulietWilletts.jpg" alt="Speaker 1" class="speaker">
+		<div class="speakerp">
+        <h2>Juliet Willets</h2>
+        <p>Professor - Institute for Sustainable Futures | University of Technology Sydney</p>
+        </div>
+		</div>
+		
+		        <div class="speaker">
+        <img src="https://cwas.org.in/resources/admin_uploads/resources/GSACKalanithyVairavamoorthy.jpg" alt="Speaker 1" class="speaker">
+		<div class="speakerp">
+        <h2>Kalanithy Vairavamoorthy</h2>
+        <p>Executive Director | International Water Association (IWA) </p>
+        </div>
+		</div>
+		
+		
+		        <div class="speaker">
+        <img src="https://cwas.org.in/resources/admin_uploads/resources/GSACThammaratKoottatep.jpg" alt="Speaker 1" class="speaker">
+		<div class="speakerp">
+        <h2>Thammarat Koottatep</h2>
+        <p>Professor - Environmental Engineering Management | Asian Institute of Technology (AIT)</p>
+        </div>
+		</div>
+			
+			<br>
+		<p> Kindly let us know if you have any queries. please email us at <strong>shah.dhara@cept.ac.in </strong> and <strong> cwas@cept.ac.in </strong>
+		</p>
+    </section>
+
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>

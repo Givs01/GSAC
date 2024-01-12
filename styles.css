@@ -1,0 +1,378 @@
+/* Splash screen styles */
+		#splash-screen {
+			position: fixed;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background-color: #00a3ba;
+			color: #fff;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			font-size: 24px;
+			font-family: 'Open Sans', sans-serif;
+		}
+		body {
+            font-family: 'Open Sans', sans-serif;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+
+        header {
+            background-color: #00a3ba;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+			font-size: 15px;
+			margin-bottom: 4px;
+        }
+		
+		footer {
+			background-color: #00a3ba;
+			color: #fff;
+			padding: 15px;
+			text-align: center;
+			position: fixed; /* Change from absolute to fixed */
+			bottom: 0;
+			width: 100%;
+			z-index: 3; /* Set a higher z-index value */
+			font-size: 10px;
+		}
+
+
+        #app-drawer {
+            height: 100%;
+            width: 0;
+            position: fixed;
+            z-index: 1;
+            overflow-x: hidden;
+            transition: 0.5s;
+            padding-top: 60px;
+            background-color: #ECFDF1;
+			font-size: 18px;
+        }
+
+        #app-drawer a {
+            padding: 8px 8px 8px 32px;
+            text-decoration: none;
+            font-size: 18px;
+            color: #818181;
+            display: block;
+            transition: 0.3s;
+        }
+
+         #app-drawer a img {
+            margin-right: 10px;
+            max-width: 20px;
+            height: auto;
+        }
+
+        #app-drawer a:hover {
+            color: #f1f1f1;
+			background-color: #00a3ba;
+        }
+
+        #menu-icon, #close-icon, #back-button {
+            font-size: 18px;
+            cursor: pointer;
+            position: fixed;
+            top: 40px;
+            z-index: 2;
+            color: #fff;
+        }
+		    
+
+
+        #menu-icon {
+            left: 15px;
+        }
+
+        #close-icon, #back-button {
+            display: none;
+        }
+
+        #close-icon {
+            right: 15px;
+        }
+
+        #back-button {
+            left: 15px;
+        }
+
+		section {
+			padding: 30px;
+			text-align: left;
+			max-width: 480px;
+			margin: 0 auto;
+			height: 80vh; /* Set initial height to 70% of the viewport height */
+			overflow-y: auto; /* Enable vertical scrolling */
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			scrollbar-color: #00a3ba #ECFDF1; /* Set the color of the scrollbar */
+		}
+
+
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin-bottom: 20px;
+        }
+		
+		/* Add your styles for the active link here */
+        #app-drawer a.active {
+            background-color: #32BFD6; /* Highlight color */
+            color: #333; /* Text color */
+        }
+		
+		p {
+			margin-bottom: 15px; /* Add some space between paragraphs */
+			line-height: 1.5; /* Set the line height for better readability */
+			font-family: 'Open Sans', sans-serif;
+			font-size: 16px;
+			line-height: 24px;
+			color: #595957;
+			text-align: justify;
+			margin-top: 0;
+			margin-bottom: 1rem;
+		}
+		
+
+		a {
+			text-align: left;
+			margin-top: 0;
+			margin-bottom: 1rem;
+		}
+/* search -  */
+
+        #overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            justify-content: center;
+            align-items: center;
+            z-index: 999;
+        }
+
+        #search-form {
+            background: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            text-align: center;
+        }
+
+    /* General styling for icons and form within the overlay */
+		#search-icon {
+			color: #ffffff;
+            font-size: 30px;
+            cursor: pointer;
+            position: fixed;
+            top: 30px;
+			right: 40px;
+            z-index: 2;
+            color: #fff;		  
+		
+		}
+/* page - programme */
+
+		h2 {
+			font-family: 'Open Sans', sans-serif;
+            text-align: left;
+			font-size: 16px;
+			margin-top: 20px;
+            
+        }
+		
+		
+		
+		
+		
+        #search-bar {
+            width: 100%;
+            padding: 15px;
+            box-sizing: border-box;
+            background-color: #ECFDF1; /* Green color */
+            border-color: #00a3ba;
+            border-radius: 50px;
+            font-size: 16px;
+			margin-bottom: 20px;
+        }
+
+		#event-calendar {
+			max-width: 480px;
+			margin: 0 auto;
+			background-color: #A0A7AE;
+			display: flex;
+             }
+
+		.date-card {
+			width:100%;
+			border: 2px solid #ffffff;
+			align-items: center;
+			text-align: center;
+			justify-content: center;
+			display: inline-block;
+			background-color: #747D86; /* Green color */
+			color: white;
+			padding: 20px;
+			cursor: pointer;
+
+			
+		}
+
+        .date-card:hover {
+            background-color: #A0A7AE; /* Darker green on hover */
+        }
+
+        .date-card.selected {
+            background-color: #00a3ba; /* Darker green for selected date */
+        }
+
+
+
+        .time-slots-container {
+			width:100%;
+            background-color: #A0A7AE; /* Green color */
+            color: white;
+            padding: 5px;
+            margin: 5px 0;
+            border-radius: 8px;
+        }
+
+        .event-item {
+			width:100%;
+            background-color: white;
+            border: 1px solid #ddd;
+            margin: 0 auto;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            transition: box-shadow 0.3s;
+			position:relative;
+        }
+
+        .event-item:hover {
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .event-details {
+            width:390px;
+			display: flex;
+            flex-direction: column; /* Updated to display event type and location on separate lines */
+			justify-content: center;
+        }
+
+        .add-to-schedule-btn {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background-color: #45a049; /* Darker green color */
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .add-to-schedule-btn:hover {
+            background-color: #3f9043; /* Darker green on hover */
+        }
+
+        .location-icon {
+            width: 20px;
+            height: 33px;
+            margin-right: 5px;
+        }
+
+        .location-info,
+        .event-type-info {
+            display: flex;
+            align-items: center;
+            margin-bottom: 5px; /* Adjust the margin as needed */
+        }
+		
+		/*Speaker*/
+		
+        .speaker {
+            border: 1px solid #ddd;
+            padding: 5px;
+            margin: 10px;
+            background-color: #fff;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            text-align: left;
+		}
+		
+		.speaker img {
+            border-radius: 50%;
+            max-width: 100px;
+            max-height: 100px;
+            		
+        }
+		
+		.speaker:nth-child(odd) {
+			border-left: 8px solid #A0A7AE;
+		}
+
+		.speaker:nth-child(even) {
+		  border-left: 8px solid #747D86;
+		}
+		    .speakerp {
+            padding: 10px;
+            margin: 10px;
+            background-color: #fff;
+            align-items: center;
+            text-align: left;
+			}
+		
+		
+		/*poster*/
+		h3 {
+			font-family: 'Open Sans', sans-serif;
+            text-align: left;
+			font-size: 10px;
+
+        }
+		h4 {
+			font-family: 'Open Sans', sans-serif;
+            text-align: left;
+			font-size: 16px;
+			margin: 2px;
+			padding-top: 20px;
+            
+        }
+		h5 {
+			margin-bottom: 5px; /* Add some space between paragraphs */
+			font-family: 'Open Sans', sans-serif;
+			font-size: 12.8px;
+			color: #595957;
+			text-align: justify;
+			margin-top: 0;
+			
+		}
+        .posterdiv {
+			width: 100%;
+            border: 1px solid #ddd;
+            padding-left: 20px;
+            margin: 10px;
+            background-color: #fff;
+            border-radius: 8px;
+            align-items: center;
+            text-align: left;
+		}
+		.posterdiv:nth-child(odd) {
+			border-left: 8px solid #A0A7AE;
+		}
+
+		.posterdiv:nth-child(even) {
+		  border-left: 8px solid #747D86;
+		}
